@@ -5,6 +5,7 @@ const spans =document.querySelectorAll("span");
 const replay = document.querySelector("#replay");
 const time = document.querySelector(".time");
 const remlad = document.querySelector("h2");
+const h5 = document.querySelector(".button");
 const body = document.querySelector("body")
 
 animation()
@@ -66,7 +67,6 @@ function remladInfo(){
  
  
  remlad.classList.add("remladFont")
- remlad.classList.add("remladFont") 
     remlad.textContent ="Want to Buy DATA, Please call 07033637349"
 }
  function remladInfos(){
@@ -75,5 +75,14 @@ function remladInfo(){
  }
 
 remlad.addEventListener("mouseover", remladInfo)
- remlad.addEventListener("mouseout", remladInfos)
+remlad.addEventListener("mouseout", remladInfos)
 
+// adding dark theme
+h5.addEventListener("click",love)
+
+function love(){
+    console.log("hi")
+    body.classList.toggle("background");
+    h5.classList.toggle("white")
+
+}
