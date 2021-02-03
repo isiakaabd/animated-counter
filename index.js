@@ -3,6 +3,9 @@ const counter = document.querySelector(".counter");
 const finalText = document.querySelector(".final");
 const spans =document.querySelectorAll("span");
 const replay = document.querySelector("#replay");
+const time = document.querySelector(".time");
+const remlad = document.querySelector("h2");
+const h5 = document.querySelector("h5")
 
 animation()
 
@@ -44,4 +47,31 @@ replay.addEventListener("click", ()=>{
     animation()
 })
 
+var d = new Date();
+  let hours = d.getHours()
+
+ if (hours >=12){
+      time.textContent = value
+     = "Good Afternoon"
+ }else if(hours >16 && hours < 20 ){
+     time.textContent= "Good Evening"
+ }else if(hours >= 20){
+    time.textContent= "Good Night"
+ }else{
+    time.textContent= "Good Morning"
+ }
+function remladInfo(){
+ 
+ 
+ remlad.classList.add("remladFont")
+ remlad.classList.add("remladFont") 
+    remlad.textContent ="Want to Buy DATA, Please call 07033637349"
+}
+ function remladInfos(){
+    remlad.classList.remove("remladFont") 
+    remlad.textContent ="REMLAD" 
+ }
+
+remlad.addEventListener("mouseover", remladInfo)
+ remlad.addEventListener("mouseout", remladInfos)
 

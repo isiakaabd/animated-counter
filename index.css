@@ -141,3 +141,12 @@ transform: translate(-50%,-50%) scale(1);
   button:focus{
     outline: none;
   }
+
+  .remladFont{
+      font-size: 16px;
+      background-color: rgb(160, 105, 105);
+      color: #f3f3f3f3;
+      font-weight: 900;
+      padding: 10px 14px;
+  
+  }
